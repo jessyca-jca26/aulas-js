@@ -21,19 +21,28 @@ if (numero > 0) {
 // Exemplo 2: condicional COMPOSTA (IF/ELSE)
 
 let aluno= "João";
-let nota1= 8;
-let nota2= 7;
+let nota1= 9.64;
+let nota2= 9.55;
 let media=(nota1 + nota2 ) / 2;
 
 console.log(`Aluno: ${aluno}`);
-console.log(`Notas: ${nota1}e ${nota2}`);
+console.log(`Notas: ${nota1} e ${nota2}`);
 console.log(`Média ${media.toFixed(2)}`);
 
-if(media >= 7){
-    console.log("aprovado");
+let situacao;//underfined( indefenida)
+let faltas=20;
+console.log(`faltas: ${faltas}`);
+
+
+
+// if(media >= 7){
+
+/*&&-> operador lógico E usado quando precisamos avaliar mais de uma condição ao mesmo tempo*/
+if(media>= 7 && faltas<15) {
+    situacao = "aprovado";
 
 } else{
-    console.log("reprovado");
+    situacao = "reprovado";
 
 }
 
